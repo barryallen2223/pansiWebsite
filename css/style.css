@@ -75,6 +75,8 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px;
     color: var(--white);
     text-decoration: none;
+    padding: 0 15px 0 15px;
+    border-radius: 5px;
     font-weight: 500;
     margin-left: 35px;
     transition: 0.3s;
@@ -85,7 +87,10 @@ body::-webkit-scrollbar-thumb {
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--hover);
+    border: 1px solid var(--hover);
+    border-radius: 15px;
+    background: linear-gradient(45deg, var(--pink) 0%, var(--hover) 99%);
+    color: var(--white);
 }
 
 section {
