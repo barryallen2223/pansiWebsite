@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
 .navbar a.active {
     border: 1px solid var(--hover);
     border-radius: 15px;
-    background: linear-gradient(45deg, var(--pink) 0%, var(--hover) 99%);
+    background: var(--hover);
     color: var(--white);
 }
 
@@ -193,6 +193,8 @@ section:nth-child(odd) {
 
 .btn {
     display: inline-block;
+    justify-content: center;
+    align-items: center;
     padding: 12px 28px;
     background: var(--hover);
     border-radius: 40px;
@@ -202,9 +204,16 @@ section:nth-child(odd) {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    transition: 0.5s ease;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
+}
+
+.btn:hover {
+    background: var(--background);
+    color: var(--hover);
+    box-shadow: 0 0 20px var(--hover);
 }
 
 @keyframes slideRight {
